@@ -1441,6 +1441,10 @@ tbody tr:hover {
     border-right: none;
   }
 
+  .ppl-name {
+    font-size: 14px;
+  }
+
   .ppl-stats {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
