@@ -824,8 +824,8 @@ function renderPplCards() {
             <span class="ppl-avatar">
               ${initials}
             </span>
-
             <span>${ppl}</span>
+            <strong>${formatPercent(progress)}</strong>
           </div>
 
           <div class="ppl-progress">
@@ -851,11 +851,6 @@ function renderPplCards() {
             <div class="ppl-stat">
               <span>Approved</span>
               <strong>${formatNumber(data.approve)}</strong>
-            </div>
-
-            <div class="ppl-stat">
-              <span>Progress</span>
-              <strong>${formatPercent(progress)}</strong>
             </div>
           </div>
         </div>
@@ -905,6 +900,9 @@ function renderTable(data) {
     const submit =
       angka(item.SUBMIT);
 
+    const reject =
+      angka(item.REJECT);
+
     const approve =
       angka(item.APPROVED);
 
@@ -921,9 +919,9 @@ function renderTable(data) {
         <td>${item.NAMA_DESA || ""}</td>
         <td>${item.NAMA_SLS || ""}</td>
         <td>${item.NAMA_PPL || ""}</td>
-        <td>${item.NAMA_PML || ""}</td>
         <td align="center">${formatNumber(total)}</td>
         <td align="center">${formatNumber(submit)}</td>
+        <td align="center">${formatNumber(reject)}</td>
         <td align="center">${formatNumber(approve)}</td>
         <td align="center">${formatPercent(progress)}</td>
         <td><span class="status ${status.className}">${status.text}</span></td>
