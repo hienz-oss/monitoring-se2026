@@ -1425,8 +1425,12 @@ tbody tr:hover {
     padding: 0 12px;
   }
 
+  .card-header i {
+    font-size: 22px;
+  }
+
   .card .value {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .ppl-cards {
