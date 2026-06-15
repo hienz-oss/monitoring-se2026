@@ -1425,6 +1425,10 @@ tbody tr:hover {
     padding: 0 12px;
   }
 
+  .card .value {
+    font-size: 20px;
+  }
+
   .ppl-cards {
     grid-template-columns: 1fr;
   }
