@@ -687,7 +687,7 @@ body {
 
 .ppl-name {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 6px;
   display: flex;
   align-items: center;
@@ -706,7 +706,7 @@ body {
   border: 1px solid var(--badge-border);
   border-color: var(--badge-success-border);
   color: var(--badge-success-text);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   line-height: 1;
 }
