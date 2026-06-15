@@ -15,6 +15,7 @@
     <meta property="og:url" content="https://se2026-320805.vercel.app/">
     <meta property="og:image" content="https://se2026-320805.vercel.app/logo_se2026s.png">
 </head>
+
 <body>
     <div class="app">
         <header class="header">
@@ -37,53 +38,53 @@
                         Memuat ...
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
-                
+
                     <div id="regionPanel" class="region-panel hide">
-                        <div class="region-title">                    
+                        <div class="region-title">
                             <a id="regionMapLink" class="region-map-link" href="#" target="_blank" rel="noopener">
                                 <div class="region-map-content">
-                                    <i class="fa-solid fa-location-dot"></i>                        
+                                    <i class="fa-solid fa-location-dot"></i>
                                     <span id="regionTitle">Memuat ...</span>
                                 </div>
                                 <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
                             </a>
                         </div>
-                
+
                         <div class="region-meta">
                             <div>
                                 <span>Kode Wilayah</span>
                                 <strong id="regionCode">-</strong>
                             </div>
-                
+
                             <div>
                                 <span>Kabupaten</span>
                                 <strong id="regionKab">-</strong>
                             </div>
-                
+
                             <div>
                                 <span>Provinsi</span>
                                 <strong id="regionProv">-</strong>
                             </div>
                         </div>
-                
+
                         <hr>
-                
+
                         <div class="region-stats">
                             <div>
                                 <span>Desa</span>
                                 <strong id="regionDesa">0</strong>
                             </div>
-                
+
                             <div>
                                 <span>SLS</span>
                                 <strong id="regionSls">0</strong>
                             </div>
-                
+
                             <div>
                                 <span>PPL</span>
                                 <strong id="regionPpl">0</strong>
                             </div>
-                
+
                             <div>
                                 <span>PML</span>
                                 <strong id="regionPml">0</strong>
@@ -104,12 +105,12 @@
                     <button id="refreshBtn" class="refresh-btn" title="Refresh Data">
                         <i class="fa-solid fa-rotate-right"></i>
                     </button>
-            
+
                     <div class="setting-wrap">
                         <button id="settingBtn" class="setting-btn" title="Setting tampilan">
                             <i class="fa-solid fa-sliders"></i>
                         </button>
-            
+
                         <div id="settingPanel" class="setting-panel hide">
                             <h3>Tampilkan/Sembunyikan</h3>
                             <label class="setting-item">
@@ -119,7 +120,7 @@
                                     <span class="mini-slider"></span>
                                 </label>
                             </label>
-            
+
                             <label class="setting-item">
                                 <span>Progress PPL</span>
                                 <label class="mini-switch">
@@ -127,7 +128,7 @@
                                     <span class="mini-slider"></span>
                                 </label>
                             </label>
-            
+
                             <label class="setting-item">
                                 <span>Progress SLS</span>
                                 <label class="mini-switch">
@@ -190,7 +191,7 @@
                         <i class="fa-solid fa-trophy"></i>
                         Top 7 Progress PPL
                     </h3>
-            
+
                     <div id="topPplList">
                         <div class="top-skeleton"></div>
                         <div class="top-skeleton"></div>
@@ -201,13 +202,13 @@
                         <div class="top-skeleton"></div>
                     </div>
                 </div>
-            
+
                 <div class="monitor-panel">
                     <h3 class="panel-title">
                         <i class="fa-solid fa-map-location-dot"></i>
                         Top 7 Progress Desa
                     </h3>
-                
+
                     <div id="topDesaList">
                         <div class="top-skeleton"></div>
                         <div class="top-skeleton"></div>
@@ -229,21 +230,21 @@
                                 <h4>Tim 1</h4>
                                 <span>PML : Eko Darkim</span>
                             </div>
-                        
+
                             <strong id="teamOneProgress" class="team-total-progress">
                                 0%
                             </strong>
                         </div>
                         <div id="teamOneList"></div>
                     </div>
-            
+
                     <div class="team-panel">
                         <div class="team-header">
                             <div>
                                 <h4>Tim 2</h4>
                                 <span>PML : Uhin Awaludin</span>
                             </div>
-                        
+
                             <strong id="teamTwoProgress" class="team-total-progress">
                                 0%
                             </strong>
@@ -309,9 +310,9 @@
                                     <th width="110">Desa</th>
                                     <th>SLS</th>
                                     <th width="180">PPL</th>
-                                    <th width="120">PML</th>
                                     <th width="80">Prelist</th>
                                     <th width="80">Submit</th>
+                                    <th width="80">Reject</th>
                                     <th width="80">Approved</th>
                                     <th width="80">Progress</th>
                                     <th width="110">Status</th>
