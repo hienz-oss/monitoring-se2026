@@ -811,11 +811,8 @@ function renderPplCards() {
         );
 
       const initials = ppl
-        .split(" ")
-        .filter(Boolean)
-        .map(word => word.charAt(0))
-        .slice(0, 2)
-        .join("")
+        .trim()
+        .charAt(0)
         .toUpperCase();
 
       container.innerHTML += `
