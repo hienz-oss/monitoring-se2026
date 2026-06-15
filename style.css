@@ -1319,7 +1319,6 @@ tbody tr:hover {
 }
 
 @media(max-width:1000px){
-
   .cards{
     grid-template-columns:repeat(2,1fr);
   }
@@ -1327,7 +1326,6 @@ tbody tr:hover {
   .toolbar{
     flex-direction:column;
   }
-
 }
 
 @media(max-width:900px) {
@@ -1347,6 +1345,75 @@ tbody tr:hover {
 }
 
 @media(max-width:600px) {
+  .header {
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .header-left {
+    gap: 10px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .header-logo {
+    width: 34px;
+  }
+
+  .header h1 {
+    font-size: 15px;
+    line-height: 1.1;
+  }
+
+  .header p {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  .header-right {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .theme-switch {
+    width: 44px;
+    height: 24px;
+  }
+
+  .theme-slider::before {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+  }
+
+  .theme-switch input:checked + .theme-slider::before {
+    transform: translateX(20px);
+  }
+
+  .region-badge {
+    max-width: 120px;
+    height: 24px;
+    padding: 6px 9px;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .region-panel {
+    position: fixed;
+    top: 58px;
+    left: 12px;
+    right: 12px;
+    min-width: auto;
+    width: auto;
+  }
+
+  .main {
+    padding: 0 12px;
+  }
+  
   .ppl-cards {
     grid-template-columns: 1fr;
   }
